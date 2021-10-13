@@ -1,0 +1,61 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    width: 100%;
+}
+.content{
+    position: relative;
+    margin: 10px;
+    width: calc(25% - 20px);
+    height: 200px;
+}
+@media (max-width: 1150px) {
+    .content {
+        width: calc(33.333% - 20px);
+    }
+}
+@media (max-width: 850px) {
+    .content {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 520px) {
+    .content {
+        width: calc(100% - 20px);
+    }
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.heart{
+    font-size: 50px;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+.button{
+    font-size: 15px;
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+    font-style: normal;
+    font-weight: bold;
+    color: darkgreen;
+    background-color: orange;
+    cursor: pointer;
+}
+.filter{
+    margin-bottom: 35px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: chocolate;
+    background: yellow;
+    border-radius: 5px;
+    padding: 5px 30px 5px 30px;
+}
